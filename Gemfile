@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-#gem 'rails', '3.0.3'
-#gem 'rails', '3.0.9'
-gem 'rails', '3.2.16'
+ruby '2.1.1'
+
+gem 'rails', '4.1.1'
 
 gem 'therubyracer'
 
@@ -11,14 +11,14 @@ gem 'sass-rails'
 gem 'coffee-script'
 gem 'uglifier'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'sqlite3'
 
-#gem 'cocoon', :path => '../cocoon'
-#gem 'cocoon', :git => 'https://github.com/nathanvda/cocoon'
-gem 'cocoon', '~> 1.2.0'
+gem "cocoon"
+
 
 # use master version of simple-form for twitter-bootstrap integration
-gem 'simple_form'
+gem 'simple_form', '~> 3.1.0.rc1'
+
 
 gem 'jquery-rails'
 
@@ -44,6 +44,6 @@ gem 'jquery-rails'
 # group :development, :test do
 #   gem 'webrat'
 # end
-gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem "rspec-rails", :group => [:development, :test]
 gem "slim"
 gem "slim-rails", :require => false
